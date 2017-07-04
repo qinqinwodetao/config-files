@@ -3,3 +3,14 @@ jedis:
   port: 6379
   user: test
   password: 123456
+  
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/test?useSSL=true&verifyServerCertificate=false
+    username: root
+    password: 123456
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update  
