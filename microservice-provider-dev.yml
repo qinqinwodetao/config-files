@@ -14,3 +14,13 @@ spring:
     show-sql: true
     hibernate:
       ddl-auto: update  
+      
+      
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://cluster1:8761/eureka/
+  instance:
+    hostname: microservice-provider
+    prefer-ip-address: true
+    secure-virtual-host-name: microservice-provider      
