@@ -1,5 +1,5 @@
 jedis:
-  ip: localhost
+  ip: 11111
   port: 6379
   user: test
   password: 22222222
