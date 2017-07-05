@@ -2,7 +2,7 @@ jedis:
   ip: localhost
   port: 6379
   user: test
-  password: 12
+  password: 12123123123
   
 spring:
   datasource:
