@@ -29,3 +29,9 @@ eureka:
 
 logging:
   level: debug    
+  
+  
+management:
+  security:
+    enabled: false
+  
