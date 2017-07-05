@@ -1,5 +1,5 @@
 jedis:
-  ip: 127.0.0.1
+  ip: 22222222
   port: 6379
   user: test
   password: 22222222
