@@ -21,9 +21,9 @@ eureka:
     serviceUrl:
       defaultZone: http://cluster1:8761/eureka/
   instance:
-    hostname: microservice-client
+    hostname: microservice-config-client
     prefer-ip-address: true
-    secure-virtual-host-name: microservice-client
+    secure-virtual-host-name: microservice-config-client
 
 
 
