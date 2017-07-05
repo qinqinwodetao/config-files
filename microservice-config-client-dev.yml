@@ -1,0 +1,37 @@
+jedis:
+  ip: localhost
+  port: 6379
+  user: test
+  password: 1212312312
+  
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/test?useSSL=true&verifyServerCertificate=false
+    username: root
+    password: 123456
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update  
+      
+      
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://cluster1:8761/eureka/
+  instance:
+    hostname: microservice-client
+    prefer-ip-address: true
+    secure-virtual-host-name: microservice-client
+
+
+
+logging:
+  level: debug    
+  
+  
+management:
+  security:
+    enabled: false
+  
