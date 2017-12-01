@@ -1,0 +1,11 @@
+eureka:
+    instance:
+      hostname: ${spring.application.name}
+      preferIpAddress: true
+      statusPageUrlPath: ${server.context-path}/info
+      healthCheckUrlPath: ${server.context-path}/health
+    client:
+      serviceUrl:
+        defaultZone: http://47.94.148.30:8761/eureka/
+      healthcheck:
+        enabled: true
