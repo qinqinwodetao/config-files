@@ -30,14 +30,4 @@ jedis:
   port: 77778
   user: test
   password: 22222222      
-  
-info:
-  app:
-  name: ${spring.application.name}
-  encoding: @project.build.sourceEncoding@
-  java:
-    source: @java.version@
-    target: @java.version@
-  spring:
-    source: @spring.version@
-    target: @spring.version@  
+
