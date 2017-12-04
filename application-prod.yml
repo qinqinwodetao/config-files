@@ -20,7 +20,11 @@ spring:
     show-sql: true
     hibernate:
       ddl-auto: update    
-
+  rabbitmq:
+    host: 47.94.148.30
+    port: 5672
+    username: root
+    password: 123456
 jedis:
   ip: 127.0.0.1
   port: 6379
