@@ -9,3 +9,14 @@ eureka:
         defaultZone: http://47.94.148.30:8761/eureka/
       healthcheck:
         enabled: true
+        
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://47.94.148.30:3306/spring_cloud?useSSL=true&verifyServerCertificate=false
+    username: root
+    password: wcy123456
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update           
