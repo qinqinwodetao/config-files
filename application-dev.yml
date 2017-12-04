@@ -27,6 +27,6 @@ spring:
     password: 123456
 jedis:
   ip: 127.0.0.1
-  port: 7777
+  port: 77778
   user: test
   password: 22222222      
