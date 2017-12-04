@@ -19,4 +19,10 @@ spring:
   jpa:
     show-sql: true
     hibernate:
-      ddl-auto: update        
+      ddl-auto: update    
+
+jedis:
+  ip: 127.0.0.1
+  port: 6379
+  user: test
+  password: 22222222      
