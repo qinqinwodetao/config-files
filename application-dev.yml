@@ -23,6 +23,6 @@ spring:
 
 jedis:
   ip: 127.0.0.1
-  port: 6379
+  port: 6377
   user: test
   password: 22222222      
