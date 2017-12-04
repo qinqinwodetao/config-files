@@ -4,6 +4,8 @@ eureka:
       preferIpAddress: true
       statusPageUrlPath: ${server.context-path}/info
       healthCheckUrlPath: ${server.context-path}/health
+      leaseRenewalIntervalInSeconds: 1
+      leaseExpirationDurationInSeconds: 2
     client:
       serviceUrl:
         defaultZone: http://47.94.148.30:8761/eureka/
