@@ -1,0 +1,33 @@
+eureka:
+    instance:
+      hostname: ${spring.application.name}
+      preferIpAddress: true
+#      leaseRenewalIntervalInSeconds: 1
+#      leaseExpirationDurationInSeconds: 2
+    client:
+      serviceUrl:
+        defaultZone: http://47.94.148.30:8761/eureka/
+      healthcheck:
+        enabled: true
+        
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://47.94.148.30:3306/spring_cloud?useSSL=true&verifyServerCertificate=false
+    username: root
+    password: wcy123456
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update     
+  rabbitmq:
+    host: 47.94.148.30
+    port: 5672
+    username: root
+    password: 123456
+jedis:
+  ip: 127.0.0.1
+  port: 77778
+  user: test
+  password: 22222222      
+

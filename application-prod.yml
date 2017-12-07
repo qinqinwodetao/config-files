@@ -1,0 +1,43 @@
+eureka:
+    instance:
+      hostname: ${spring.application.name}
+      preferIpAddress: true
+#      leaseRenewalIntervalInSeconds: 1 表示eureka client发送心跳给server端的频率
+#      leaseExpirationDurationInSeconds: 2  表示eureka server至上一次收到client的心跳之后，等待下一次心跳的超时时间，在这个时间内若没收到下一次心跳，则将移除该instance
+    client:
+      serviceUrl:
+        defaultZone: http://47.94.148.30:8761/eureka/
+      healthcheck:
+        enabled: true
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://47.94.148.30:3306/spring_cloud?useSSL=true&verifyServerCertificate=false
+    username: root
+    password: wcy123456
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update    
+  rabbitmq:
+    host: 47.94.148.30
+    port: 5672
+    username: root
+    password: 123456
+jedis:
+  ip: 127.0.0.1
+  port: 6377
+  user: test
+  password: 22222222      
+
+info:
+  app:
+  name: ${spring.application.name}
+  encoding: @project.build.sourceEncoding@
+  java:
+    source: @java.version@
+    target: @java.version@
+  spring:
+    source: @spring.version@
+    target: @spring.version@
